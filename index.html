@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pratigya's Hackathon Journey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratigya - Hackathon Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .achievement {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Hackathon Portfolio!</h1>
-    <p>QR code successfully scanned! 🎉</p>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>🚀 Hackathon Passport</h1>
+            <p>Scan Successful! Welcome to my journey</p>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <h2>👩‍💻 Pratigya Sachdeva</h2>
+            <p><strong>ID:</strong> pratigyal23</p>
+            <p><strong>Frontend Mastery 2025</strong></p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>🏆</h3>
+                    <p>Hackathons Won</p>
+                    <strong>2</strong>
+                </div>
+                <div class="stat-item">
+                    <h3>💼</h3>
+                    <p>Projects</p>
+                    <strong>5</strong>
+                </div>
+                <div class="stat-item">
+                    <h3>⭐</h3>
+                    <p>Achievements</p>
+                    <strong>8</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="profile-card">
+            <h2>🎯 Recent Achievements</h2>
+            
+            <div class="achievement">
+                <h3>🏅 AI Challenge 2025 Winner</h3>
+                <p>First prize in national AI hackathon</p>
+                <span class="badge">Grand Prize</span>
+                <span class="badge">AI/ML</span>
+            </div>
+
+            <div class="achievement">
+                <h3>🥈 Frontend Mastery Hackathon</h3>
+                <p>Second place in frontend development competition</p>
+                <span class="badge">Runner-up</span>
+                <span class="badge">React</span>
+            </div>
+
+            <div class="achievement">
+                <h3>🚀 Code Ninja Award</h3>
+                <p>Best code quality and innovation</p>
+                <span class="badge">Special Award</span>
+                <span class="badge">Innovation</span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="text-align: center; margin-top: 30px;">
+            <button onclick="showSettings()">⚙️ Account Settings</button>
+            <button onclick="viewProjects()">📁 View Projects</button>
+            <button onclick="scanAgain()">📱 Scan Again</button>
+        </div>
+    </div>
+
+    <script>
+        function showSettings() {
+            alert('Settings page coming soon! 🚀');
+        }
+
+        function viewProjects() {
+            alert('Project gallery will be added in next update!');
+        }
+
+        function scanAgain() {
+            alert('QR code scanner will open here!');
+        }
+    </script>
 </body>
 </html>
